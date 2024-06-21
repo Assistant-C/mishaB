@@ -1,0 +1,372 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(75,0,130);
+    background: linear-gradient(180deg, rgba(75,0,130,1) 11%, rgba(148,0,211,1) 100%);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    z-index: 1000;
+}
+
+.nav_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_item_i {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav_item_i .face {
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav_item_i .name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav_item_ii {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav_item_ii > div {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav_item_ii > div a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_item_ii > div:hover a {
+    text-decoration: underline;
+}
+
+.side {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.hdiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hdiv h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hdiv p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hdiv .hbutton {
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hdiv .hbutton:hover {
+    background-color: #9370db;
+}
+
+.sectiona {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 80%;
+    background-color: rgba(75,0,130,0.8);
+}
+
+.sectiona .stext,
+.sectiona .rightbs,
+.sectiona .leftbs {
+    flex: 1 1 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.sectiona h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sectiona p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.leftbs .h,
+.leftbs .c,
+.leftbs .j,
+.leftbs .React,
+.leftbs .g {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    background-color: #4b0082;
+}
+
+.contact {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgba(75,0,130,0.8);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #9370db;
+    color: white;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #9370db;
+}
+
+.main {
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(75,0,130,0.8);
+}
+
+.main h3 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.main p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.porjectimg,
+.proporject {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    color: #888;
+    background-color: #4b0082;
+}
+
+.porjectimg {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proporject {
+    flex: 1;
+}
+
+.footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 82%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(148,0,211,1);
+}
+
+.footer .fcenter {
+    display: flex;
+    justify-content: space-between;
+}    
+
+.footer .lf, .footer .lr {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.footer p {
+    margin: 10px 0 0;
+}
+
+.footer .fh {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer .fp {
+    color: white;
+}
+
+.ffp {
+    width: 30%;
+    color: white;
+}
+
+.lr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fh {
+    width: 80%;
+    text-align: center;
+}
+
+section {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav_item_ii > div {
+        margin-left: 10px;
+    }
+    .footer .fcenter {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .lf, .footer .lr {
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        padding: 20px;
+    }
+    .nav_item_ii {
+        flex: 1;
+    }
+    .side {
+        display: none;
+    }
+    .nav_item_i {
+        padding: 10px;
+    }
+    .footer .fcenter {
+        width: 100%;
+    }
+    .footer .lf, .footer .lr {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+    }
+    .footer h2, .footer p {
+        margin: 5px 0;
+    }
+    .footer .fh, .footer .fp {
+        font-size: 14px;
+    }
+    .contact,
+    .main,
+    .sectiona {
+        width: 100%;
+    }
+    .sectiona .stext,
+    .sectiona .rightbs,
+    .sectiona .leftbs {
+        flex: 1 1 100%;
+    }
+    .porjectimg,
+    .proporject {
+        flex: 1 1 100%;
+    }
+}
